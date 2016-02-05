@@ -1,5 +1,4 @@
 <ifModule mod_headers.c>
-    # Все css, javascript и текстовые файлы будут храниться в кэше браузера одну неделю
     <FilesMatch "\.(js|css|txt)$">
         Header set Cache-Control "max-age=604800"
     </FilesMatch>
